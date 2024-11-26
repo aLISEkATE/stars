@@ -9,9 +9,9 @@ var_dump($row);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
-    $new_clicks = $row['clicks'] + 1;
+    $new_clicks = $row['click'] + 1;
 
-   $sql = "UPDATE clickers SET clicks = $new_clicks WHERE id = 1"; 
+   $sql = "UPDATE clickers SET click = $new_clicks WHERE id = 1"; 
 }
 $conn->close();
 ?>
